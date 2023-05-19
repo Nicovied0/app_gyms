@@ -9,9 +9,12 @@ import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProfileComponent } from './profile/profile.component';
 import { MirutinaComponent } from './mirutina/mirutina.component';
-import { EjerciciosComponent } from './ejercicios/ejercicios.component';
+import { ExercicesComponent } from './exercices/exercices.component';
 import { NewrutinaComponent } from './newrutina/newrutina.component';
 import { FormsModule } from '@angular/forms';
+import { ExerciceComponent } from './exercice/exercice.component';
+import { GroupMuscularComponent } from './group-muscular/group-muscular.component';
+
 
 @NgModule({
   declarations: [
@@ -22,8 +25,10 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     ProfileComponent,
     MirutinaComponent,
-    EjerciciosComponent,
-    NewrutinaComponent
+    NewrutinaComponent,
+    ExerciceComponent,
+    GroupMuscularComponent,
+    ExercicesComponent
   ],
   imports: [
     BrowserModule,
