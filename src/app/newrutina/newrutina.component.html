@@ -1,0 +1,23 @@
+<form (ngSubmit)="submitForm()" #rutinaForm="ngForm">
+  <label for="nombre">Nombre:</label>
+  <input
+    type="text"
+    id="nombre"
+    name="nombre"
+    [(ngModel)]="rutina.nombre"
+    required
+  />
+
+  <label for="ejercicio">Ejercicio:</label>
+  <input
+    type="text"
+    id="ejercicio"
+    name="ejercicio"
+    [(ngModel)]="rutina.ejercicio"
+    required
+  />
+
+  <!-- Agrega más campos según tus necesidades -->
+
+  <button type="submit" [disabled]="!rutinaForm.form.valid">Guardar</button>
+</form>
